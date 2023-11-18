@@ -105,7 +105,7 @@ namespace HybridCLR.Editor.Installer
 
         private static void CopyWithCheckLongFile(string srcFile, string dstFile)
         {
-            var maxPathLength = 255;
+            var maxPathLength = 1024;
 #if UNITY_EDITOR_OSX
             maxPathLength = 1024;
 #endif
